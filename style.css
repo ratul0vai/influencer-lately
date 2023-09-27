@@ -25,7 +25,6 @@ nav {
 .main-camera {
   display: flex;
   padding: 100px;
-  flex-direction: column;
 }
 
 .influ-intro {
@@ -68,6 +67,13 @@ nav {
   left: 0;
   z-index: 2;
 }
+.logos {
+  padding-top: 230px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 567px) {
   header {
@@ -84,9 +90,9 @@ nav {
 
   .main-camera {
     padding: 20px;
+    flex-direction: column;
   }
   .dslr-png {
-    flex-direction: column;
     margin-left: 0px;
   }
   #svg,
@@ -95,5 +101,10 @@ nav {
     margin-left: 50px;
     width: 257px;
     height: 257px;
+  }
+  .logos {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 30px;
   }
 }
