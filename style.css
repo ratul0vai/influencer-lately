@@ -5,7 +5,7 @@
   margin: 0px 0px;
 }
 header {
-  padding: 50px;
+  padding: 100px;
 }
 
 nav {
@@ -24,8 +24,8 @@ nav {
 }
 .main-camera {
   display: flex;
-  justify-content: space-between;
-  padding: 50px;
+  padding: 100px;
+  flex-direction: column;
 }
 
 .influ-intro {
@@ -36,23 +36,43 @@ nav {
   color: #3a3a3a;
 
   font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.arrow::after {
-  content: "→";
-  margin-left: 5px;
-  color: white;
-}
-.button-pink {
-  border-radius: 41px;
-  background: #e02c6d;
-}
-.button-pink-discription {
-  color: #fff;
 
+.button-pink {
+  padding: 15px 25px;
+  border-radius: 60px;
+  background: #e02c6d;
+  color: #fff;
+  align-items: center;
   font-weight: 700;
+  border-style: none;
 }
-/* Media query for screens with a max-width of 767px */
+.white-arrow {
+  padding-left: 8px;
+}
+.dslr-png {
+  position: relative;
+  margin-left: 700px;
+}
+#svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#image {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  z-index: 2;
+}
+
 @media screen and (max-width: 567px) {
+  header {
+    padding: 30px;
+  }
   nav {
     flex-direction: column;
     align-items: center;
@@ -60,5 +80,20 @@ nav {
 
   .nav-list {
     flex-direction: column;
+  }
+
+  .main-camera {
+    padding: 20px;
+  }
+  .dslr-png {
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  #svg,
+  #image {
+    padding-top: 40px;
+    margin-left: 50px;
+    width: 257px;
+    height: 257px;
   }
 }
