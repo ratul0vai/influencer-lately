@@ -74,7 +74,14 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.popular-collection {
+  padding-top: 50px;
 
+  display: grid;
+
+  grid-template-columns: repeat(3, 25rem);
+  margin-left: 380px;
+}
 @media screen and (max-width: 567px) {
   header {
     padding: 30px;
